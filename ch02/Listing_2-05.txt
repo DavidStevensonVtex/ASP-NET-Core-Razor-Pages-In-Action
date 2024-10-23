@@ -1,4 +1,4 @@
-﻿@* Listing 2.5 Adding the Welcome page to the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
+@* Listing 2.5 Adding the Welcome page to the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
 
 <!DOCTYPE html>
 <html lang="en">
