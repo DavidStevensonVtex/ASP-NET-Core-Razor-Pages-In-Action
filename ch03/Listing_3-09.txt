@@ -6,5 +6,8 @@
 @{
 	ViewData["Title"] = "Welcome";
 	var output = "<p>This is a paragraph</p>";
+	var german = "Gebühr für übergroßes Gepäck";
 }
 @output
+
+<p>@german</p>
