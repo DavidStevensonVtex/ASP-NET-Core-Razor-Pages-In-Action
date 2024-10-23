@@ -1,4 +1,4 @@
-﻿@* Listing 2.3 Adding content to the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 2.3 Adding content to the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
