@@ -1,4 +1,4 @@
-﻿@* Listing 3.2 Adding a using diretive with Razor syntax in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 3.2 Adding a using diretive with Razor syntax in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
