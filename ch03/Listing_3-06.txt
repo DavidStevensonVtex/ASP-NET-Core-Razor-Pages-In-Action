@@ -1,4 +1,4 @@
-﻿@* Listing 3.6 foreach statement example in Razor in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 3.6 foreach statement example in Razor in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
