@@ -1,4 +1,4 @@
-﻿@* Listing 3.3 Declaring a method in a functions block in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 3.3 Declaring a method in a functions block in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
