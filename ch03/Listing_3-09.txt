@@ -1,4 +1,4 @@
-﻿@* Listing 3.9 HTML assigned to the output variable that is rendered in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 3.9 HTML assigned to the output variable that is rendered in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
