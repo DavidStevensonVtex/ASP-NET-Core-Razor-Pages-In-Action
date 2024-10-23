@@ -1,4 +1,4 @@
-// Listing 2.15 Registering middleware with an extension method in the Program.cs file in the WebApplication1 folder.
+// Listing 2.15b Registering middleware with an extension method in the Program.cs file in the WebApplication1 folder.
 
 using WebApplication1;
 
@@ -26,6 +26,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.UseMiddleware(typeof(IpAddressMiddleware));
+app.UseIpAddressMiddleware();
 
 app.Run();
