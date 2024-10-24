@@ -1,4 +1,4 @@
-﻿@* Listing 3.30 Using the asp-route-* attribute on the anchor tag helper to pass a value in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 3.30 Using the asp-route-* attribute on the anchor tag helper to pass a value in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
