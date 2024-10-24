@@ -1,4 +1,4 @@
-﻿@* Listing 3.20 Using IsSectionDefined to determine in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
+@* Listing 3.20 Using IsSectionDefined to determine in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
 
 <!DOCTYPE html>
 <html>
