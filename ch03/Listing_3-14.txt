@@ -1,4 +1,4 @@
-﻿@* Listing 3.14 HTML Lcomments resulting in the content not being rendered in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 3.14 HTML Lcomments resulting in the content not being rendered in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
