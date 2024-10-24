@@ -1,0 +1,6 @@
+@* Listing 4.2 Adding a route parameter to the page and retrieving its value for display in the City.cshtml.cs file in the CityBreaks/Pages folder *@
+
+@page "{cityName}"
+@model CityBreaks.Pages.CityModel
+
+<h2>@RouteData.Values["cityName"] Details</h2>
