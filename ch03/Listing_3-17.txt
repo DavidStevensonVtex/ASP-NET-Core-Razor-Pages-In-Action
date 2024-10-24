@@ -1,4 +1,4 @@
-﻿@* Listing 3.17 A Razor layout page including a call to the RenderBody in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
+@* Listing 3.17 A Razor layout page including a call to the RenderBody in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
 
 <!DOCTYPE html>
 <html>
