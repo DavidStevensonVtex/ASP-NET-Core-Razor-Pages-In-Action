@@ -1,4 +1,4 @@
-﻿@* Listing 3.21 Using IgnoreSection to prevent th rendering of section content in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
+@* Listing 3.21 Using IgnoreSection to prevent th rendering of section content in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
 
 @{
     bool IsAdmin = false;
