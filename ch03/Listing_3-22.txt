@@ -1,4 +1,4 @@
-﻿@* Listing 3.22 The partial tag helper used to include the content of a partial view in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
+@* Listing 3.22 The partial tag helper used to include the content of a partial view in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
 
 @{
     bool IsAdmin = false;
