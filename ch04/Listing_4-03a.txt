@@ -1,4 +1,4 @@
-// Listing 4.3 Binding route data to PageModel handler parameters in the City.cshtml.cs file in the CityBreaks/Pages folder
+// Listing 4.3a Binding route data to PageModel handler parameters in the City.cshtml.cs file in the CityBreaks/Pages folder
 
 using Microsoft.AspNetCore.Mvc.RazorPages;
 

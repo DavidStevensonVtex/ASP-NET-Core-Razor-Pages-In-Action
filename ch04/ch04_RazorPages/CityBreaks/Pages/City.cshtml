@@ -1,6 +1,6 @@
-﻿@* Listing 4.2b Defining a default value for the cityName route parameter in the City.cshtml.cs file in the CityBreaks/Pages folder *@
+﻿@* Listing 4.3 Binding route data to PageModel handler parameters in the City.cshtml file in the CityBreaks/Pages folder *@
 
 @page "{cityName=Paris}"
 @model CityBreaks.Pages.CityModel
 
-<h2>@RouteData.Values["cityName"] Details</h2>
+<h2>@Model.CityName</h2>
