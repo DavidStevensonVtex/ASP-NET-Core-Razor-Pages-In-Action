@@ -1,4 +1,4 @@
-﻿@* Listing 3.32 The asp-page-handler attribute enables targeting of different handler methods in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+@* Listing 3.32 The asp-page-handler attribute enables targeting of different handler methods in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
