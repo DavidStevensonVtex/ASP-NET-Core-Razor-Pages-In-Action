@@ -1,4 +1,4 @@
-﻿@* Listing 3.19 Defining a Razor section with the @section directive in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+﻿@* Listing 3.26 PageModel properties being exposed via the page's Model proeprty' in the Welcome.cshtml file in the WebApplication1/Pages folder *@
 
 @page
 @model WebApplication1.Pages.WelcomeModel
@@ -7,6 +7,4 @@
 	ViewData["Title"] = "Welcome";
 }
 
-@section ThingsToDoWidget {
-	<p>Visit Eiffel Tower</p>
-}
+<p>Sale ends at @Model.SaleEnds.ToString("h tt, MMMM dd")</p>

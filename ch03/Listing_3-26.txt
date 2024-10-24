@@ -1,0 +1,10 @@
+@* Listing 3.26 PageModel properties being exposed via the page's Model proeprty' in the Welcome.cshtml file in the WebApplication1/Pages folder *@
+
+@page
+@model WebApplication1.Pages.WelcomeModel
+
+@{
+	ViewData["Title"] = "Welcome";
+}
+
+<p>Sale ends at @Model.SaleEnds.ToString("h tt, MMMM dd")</p>
