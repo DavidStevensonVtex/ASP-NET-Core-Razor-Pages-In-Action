@@ -1,0 +1,7 @@
+@* Listing 3.18 Setting the layout page via the Layout property in the _ViewStart.cshtml file in the WebApplication/Pages folder *@
+
+@{
+    // Either approach works
+    Layout = "_Layout";
+    Layout = "/Pages/Shared/_Layout.cshtml";
+}
