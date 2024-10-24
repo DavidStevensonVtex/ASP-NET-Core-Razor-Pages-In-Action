@@ -1,6 +1,7 @@
-﻿@* Listing 4.3 Binding route data to PageModel handler parameters in the City.cshtml file in the CityBreaks/Pages folder *@
+﻿@* Listing 4.4 Multiple parameters in separate URL segments in the City.cshtml file in the CityBreaks/Pages folder*@
 
-@page "{cityName=Paris}"
+@page "{cityName=Paris}/{rating?}"
 @model CityBreaks.Pages.CityModel
 
 <h2>@Model.CityName</h2>
+<p>Minimum Rating: @Model.Rating.GetValueOrDefault()</p>
