@@ -1,4 +1,4 @@
-﻿@* Listing 3.16 A basic outline of a web page containing content that will be repeated in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
+@* Listing 3.16 A basic outline of a web page containing content that will be repeated in the _Layout.cshtml file in the WebApplication1/Pages/Shared folder *@
 
 <!DOCTYPE html>
 <html>
