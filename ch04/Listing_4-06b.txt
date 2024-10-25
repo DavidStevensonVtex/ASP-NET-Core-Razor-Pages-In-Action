@@ -1,4 +1,4 @@
-﻿@* Listing 4.6b Using CityRouteConstraint in the City.cshtml file in the CityBreaks/Pages folder*@
+@* Listing 4.6b Using CityRouteConstraint in the City.cshtml file in the CityBreaks/Pages folder*@
 
 @page "{cityName:city}/{rating?}"
 @model CityBreaks.Pages.CityModel
