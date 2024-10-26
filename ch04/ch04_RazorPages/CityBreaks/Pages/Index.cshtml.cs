@@ -10,7 +10,7 @@ namespace CityBreaks.Pages
 
 		public void OnGet()
 		{
-			Cities = new[] { "London", "Berlin", "Paris", "Rome" }; 
+			Cities = new[] { "London", "Berlin", "Paris", "Rome", "New York" }; 
         }
     }
 }
