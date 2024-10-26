@@ -1,7 +1,7 @@
 // Listing 4.8b Adding additional route templates via configuration in Program.cs file in the CityBreaks folder
 
 using CityBreaks.RouteConstraints;
-using static CityBreaks.PageRouteModelConventions;
+using CityBreaks.PageRouteModelConventions;
 
 namespace CityBreaks
 {
