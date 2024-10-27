@@ -1,4 +1,4 @@
-﻿@* Listing 5.3 Submitting the form with HTTP Get in Create.cshtml CityBreaks/Pages/CityManager folder *@
+﻿@* Listing 5.4 Iterating the Request.Form collection and outputting the contents in Create.cshtml CityBreaks/Pages/CityManager folder *@
 
 @page
 @model CityBreaks.Pages.CityManager.CreateModel
@@ -7,7 +7,7 @@
 }
 
 <div class="col-4">
-    <form method="get">
+    <form method="post">
         <div class="mb-3">
             <label for="name">Enter city name</label>
             <input class="form-control" type="text" name="cityName" />
@@ -16,3 +16,13 @@
     </form>
     <p>@Model.Message</p>
 </div>
+
+<ul>
+    @if (Request.HasFormContentType)
+    {
+        foreach (var item in Request.Form)
+        {
+            <li>@item.Key @Request.Form[item.Key]</li>
+        }
+    }
+</ul>

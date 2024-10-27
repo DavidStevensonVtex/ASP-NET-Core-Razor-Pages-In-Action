@@ -1,0 +1,50 @@
+@* Listing 5.4 Iterating the Request.Form collection and outputting the contents in Create.cshtml CityBreaks/Pages/CityManager folder *@
+
+@page
+@model CityBreaks.Pages.CityManager.CreateModel
+@{
+    ViewData["Title"] = "Create City";
+}
+
+<div class="col-4">
+    <form method="post">
+        <div class="mb-3">
+            <label for="name">Enter city name</label>
+            <input class="form-control" type="text" name="cityName" />
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+    <p>@Model.Message</p>
+</div>
+
+<ul>
+    @if (Request.HasFormContentType)
+    {
+        foreach (var item in Request.Form)
+        {
+            <li>@item.Key @Request.Form[item.Key]</li>
+        }
+    }
+</ul>
+
+
+// Listing 5.4 Submitting form with HTTP Post in Create.cshtml.cs CityBreaks/Pages/CityManager folder
+
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Primitives;
+
+namespace CityBreaks.Pages.CityManager
+{
+    public class CreateModel : PageModel
+    {
+        public string Message { get; set; }
+
+        public void OnPost()
+        {
+            if (!StringValues.IsNullOrEmpty(Request.Query["cityName"]))
+            {
+                Message = $"You submitted {Request.Query["cityName"]}";
+            }
+        }
+    }
+}
