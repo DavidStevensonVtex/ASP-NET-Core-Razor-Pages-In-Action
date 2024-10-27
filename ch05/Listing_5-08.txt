@@ -1,0 +1,10 @@
+// Listing 5.8 The Country class in the Country.cs file in the CityBreaks/Models folder
+
+namespace CityBreaks.Models
+{
+    public class Country
+    {
+        public string CountryName { get; set; }
+        public string CountryCode { get; set; }
+    }
+}
