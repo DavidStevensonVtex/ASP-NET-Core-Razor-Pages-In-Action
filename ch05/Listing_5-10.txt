@@ -20,11 +20,11 @@ namespace CityBreaks.Pages.CityManager
                 CountryCode = Input.CountryCode
             };
         }
-    }
 
-    public class InputModel
-    {
-        public string CountryName { get; set; }
-        public string CountryCode { get; set; }
+        public class InputModel
+        {
+            public string CountryName { get; set; }
+            public string CountryCode { get; set; }
+        }
     }
 }
