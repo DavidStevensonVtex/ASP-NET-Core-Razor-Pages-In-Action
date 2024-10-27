@@ -1,0 +1,7 @@
+﻿@* Listing 4.6b Using CityRouteConstraint in the City.cshtml file in the CityBreaks/Pages folder*@
+
+@page "{cityName:city}/{rating?}"
+@model CityBreaks.Pages.CityModel
+
+<h2>@Model.CityName</h2>
+<p>Minimum Rating: @Model.Rating.GetValueOrDefault()</p>
