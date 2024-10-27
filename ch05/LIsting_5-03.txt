@@ -18,3 +18,23 @@ namespace CityBreaks.Pages.CityManager
         }
     }
 }
+
+
+@* Listing 5.3 Submitting the form with HTTP Get in Create.cshtml CityBreaks/Pages/CityManager folder *@
+
+@page
+@model CityBreaks.Pages.CityManager.CreateModel
+@{
+    ViewData["Title"] = "Create City";
+}
+
+<div class="col-4">
+    <form method="get">
+        <div class="mb-3">
+            <label for="name">Enter city name</label>
+            <input class="form-control" type="text" name="cityName" />
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+    <p>@Model.Message</p>
+</div>
