@@ -2,6 +2,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Primitives;
 
 namespace CityBreaks.Pages.CityManager
 {
@@ -11,7 +12,10 @@ namespace CityBreaks.Pages.CityManager
 
         public void OnPost()
         {
-            Message = $"You submitted {Request.Form["cityName"]}";
+            if (!StringValues.IsNullOrEmpty(Request.Form["cityName"]))
+            {
+                Message = $"You submitted {Request.Form["cityName"]}";
+            }
         }
     }
 }
