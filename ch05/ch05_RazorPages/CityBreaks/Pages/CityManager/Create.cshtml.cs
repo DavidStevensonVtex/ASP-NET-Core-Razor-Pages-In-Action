@@ -1,4 +1,4 @@
-// Listing 5.2 The Create page with a form in Create.cshtml.cs CityBreaks/Pages/CityManager folder
+// Listing 5.2 Processing the form values in Create.cshtml.cs CityBreaks/Pages/CityManager folder
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
