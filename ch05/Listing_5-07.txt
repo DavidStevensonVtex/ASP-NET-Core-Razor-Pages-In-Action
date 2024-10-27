@@ -1,4 +1,4 @@
-﻿@* Listing 5.7 Update the Create page to work with the CityName property in Create.cshtml CityBreaks/Pages/CityManager folder *@
+@* Listing 5.7 Update the Create page to work with the CityName property in Create.cshtml CityBreaks/Pages/CityManager folder *@
 
 @page
 @model CityBreaks.Pages.CityManager.CreateModel
