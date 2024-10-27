@@ -1,4 +1,4 @@
-﻿@* Listing 5.11 The Create Country form in Create.cshtml CityBreaks/Pages/CityManager folder *@
+@* Listing 5.11 The Create Country form in Create.cshtml CityBreaks/Pages/CityManager folder *@
 
 @page
 @model CityBreaks.Pages.CityManager.CreateModel
