@@ -1,4 +1,4 @@
-﻿@* Listing 5.9 Updating the footer to include attribution in Create.cshtml CityBreaks/Pages/CityManager folder *@
+@* Listing 5.9 Updating the footer to include attribution in Create.cshtml CityBreaks/Pages/CityManager folder *@
 
 @page
 @model CityBreaks.Pages.CityManager.CreateModel
