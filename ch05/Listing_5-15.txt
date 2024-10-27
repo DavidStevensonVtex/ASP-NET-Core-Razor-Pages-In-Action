@@ -1,4 +1,4 @@
-﻿@* Listing 5.15 Multiple selection with checkboxes in the City.cshtml file in the CityBreaks/Pages folder*@
+@* Listing 5.15 Multiple selection with checkboxes in the City.cshtml file in the CityBreaks/Pages folder*@
 
 @page 
 @model CityBreaks.Pages.CityModel
