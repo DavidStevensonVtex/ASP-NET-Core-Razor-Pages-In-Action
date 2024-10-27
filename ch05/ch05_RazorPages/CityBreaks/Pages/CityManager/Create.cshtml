@@ -16,13 +16,3 @@
     </form>
     <p>@Model.Message</p>
 </div>
-
-<ul>
-    @if (Request.HasFormContentType)
-    {
-        foreach (var item in Request.Form)
-        {
-            <li>@item.Key @Request.Form[item.Key]</li>
-        }
-    }
-</ul>
