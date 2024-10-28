@@ -1,4 +1,4 @@
-//Listing 5.20 The EditModel for working with explicit indexes in Edit.cshtml in the Pages/CountryManager folder
+// Listing 5.20 The EditModel for working with explicit indexes in Edit.cshtml.cs in the Pages/CountryManager folder
 
 using CityBreaks.Models;
 using Microsoft.AspNetCore.Mvc;
