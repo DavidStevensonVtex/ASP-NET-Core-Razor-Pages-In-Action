@@ -13,15 +13,16 @@ namespace CityBreaks.Pages.CountryManager
         public InputModel Input { get; set; }
         public Country Country { get; set; }
 
+        [TempData]
+        public string CountryCode { get; set; }
+        public string CountryName { get; set; }
+
         public IActionResult OnPost(InputModel input)
         {
             if (ModelState.IsValid)
             {
-                Country = new Country
-                {
-                    CountryCode = Input.CountryCode,
-                    CountryName = Input.CountryName
-                };
+                CountryCode = Input.CountryCode;
+                CountryName = Input.CountryName;
 
                 return RedirectToPage("/CountryManager/Success");
             }
