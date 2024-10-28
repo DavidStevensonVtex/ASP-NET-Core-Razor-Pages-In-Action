@@ -17,7 +17,7 @@ namespace CityBreaks.Pages.CountryManager
             Inputs = new List<InputModel>
             {
                 new InputModel { Id = 840, CountryCode = "us", CountryName = "United States" },
-                new InputModel { Id = 826, CountryCode = "en", CountryName = "Great Britain" },
+                new InputModel { Id = 826, CountryCode = "gb", CountryName = "United Kingdom" },
                 new InputModel { Id = 250, CountryCode = "fr", CountryName = "France" }
             };
         }
