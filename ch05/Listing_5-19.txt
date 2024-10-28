@@ -1,4 +1,4 @@
-﻿// Listing 5.19 Adding a unique identifier in the Country.cs file in the CityBreaks/Models folder
+// Listing 5.19 Adding a unique identifier in the Country.cs file in the CityBreaks/Models folder
 
 namespace CityBreaks.Models
 {
