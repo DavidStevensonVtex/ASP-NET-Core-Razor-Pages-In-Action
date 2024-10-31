@@ -1,4 +1,4 @@
-﻿@* Listing 6.3 The form for the Create Property page, using tag helpers in the Create.cshtml file in the Pages/PropertyManager folder *@
+﻿@* Listing 6.8 Amending the form to include a select tag helper in the Create.cshtml file in the Pages/PropertyManager folder *@
 
 @page
 @model CityBreaks.Pages.PropertyManager.CreateModel
@@ -9,6 +9,10 @@
 }
 
 <form method="post">
+    <div class="mb-3">
+        <label class="form-label" asp-for="SelectedCity"></label>
+        <select class="form-control" asp-for="SelectedCity" asp-items="Model.Cities"></select>
+    </div>
     <div class="mb-3">
         <label class="form-label" asp-for="Name"></label>
         <input class="form-control" asp-for="Name" />
