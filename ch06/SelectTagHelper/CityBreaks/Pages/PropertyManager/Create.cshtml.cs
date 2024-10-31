@@ -1,5 +1,6 @@
-// Listing 6.7 Add properties to represent options and the selected value in the Create.cshtml.cs file in the Pages/PropertyManager folder
+// Listing 6.10 The amended CreateModel for the property manager in the Create.cshtml.cs file in the Pages/PropertyManager folder
 
+using CityBreaks.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -25,14 +26,40 @@ namespace CityBreaks.Pages.PropertyManager
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}")]
         public DateTime AvailableFrom { get; set; }
 
+        [BindProperty]
         [Display(Name = "City")]
-        public string SelectedCity { get; set; }
+        public int SelectedCity { get; set; }
         public SelectList Cities { get; set; }
+        public string Message { get; set; }
+
 
         public void OnGet()
         {
-            var cities = new[] { "London", "Berlin", "Paris", "Rome", "New York" };
-            Cities = new SelectList(cities);
+            Cities = GetCityOptions();
+        }
+
+        public void OnPost()
+        {
+            Cities = GetCityOptions();
+            if (ModelState.IsValid)
+            {
+                var city = GetCityOptions().First(o => o.Value == SelectedCity.ToString());
+                Message = $"You selected {city.Text} with value of {SelectedCity}";
+            }
+        }
+
+        private SelectList GetCityOptions()
+        {
+            var cities = new List<City>
+            {
+                new City { Id = 1, Name = "London" },
+                new City { Id = 2, Name = "Paris" },
+                new City { Id = 3, Name = "New York" },
+                new City { Id = 4, Name = "Rome" },
+                new City { Id = 5, Name = "Dublin" }
+            };
+
+            return new SelectList(cities, nameof(City.Id), nameof(City.Name));
         }
     }
 }
