@@ -1,4 +1,4 @@
-// Listing 6.11 Constructing a collection of SelectListItems in the Create.cshtml.cs file in the Pages/PropertyManager folder
+// Listing 6.12 The PageModel properties for the multiple select list in the Create.cshtml.cs file in the Pages/PropertyManager folder
 
 using CityBreaks.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +28,7 @@ namespace CityBreaks.Pages.PropertyManager
 
         [BindProperty]
         [Display(Name = "City")]
-        public int SelectedCity { get; set; }
+        public int[] SelectedCities { get; set; }
         public SelectList Cities { get; set; }
         public string Message { get; set; }
 
@@ -36,7 +36,7 @@ namespace CityBreaks.Pages.PropertyManager
         public void OnGet()
         {
             Cities = GetCityOptions();
-            SelectedCity = 3;
+            SelectedCities = new int[] { 3 };
         }
 
         public void OnPost()
@@ -44,8 +44,8 @@ namespace CityBreaks.Pages.PropertyManager
             Cities = GetCityOptions();
             if (ModelState.IsValid)
             {
-                var city = GetCityOptions().First(o => o.Value == SelectedCity.ToString());
-                Message = $"You selected {city.Text} with value of {SelectedCity}";
+                var city = GetCityOptions().First(o => o.Value == SelectedCities.ToString());
+                Message = $"You selected {city.Text} with value of {SelectedCities}";
             }
         }
 
@@ -55,7 +55,7 @@ namespace CityBreaks.Pages.PropertyManager
             {
                 new SelectListItem { Value = "1", Text = "London" },
                 new SelectListItem { Value = "2", Text = "Paris" },
-                new SelectListItem { Value = "3", Text = "New York", Selected = true },
+                new SelectListItem { Value = "3", Text = "New York" },
                 new SelectListItem { Value = "4", Text = "Rome" },
                 new SelectListItem { Value = "5", Text = "Dublin" }
             };
