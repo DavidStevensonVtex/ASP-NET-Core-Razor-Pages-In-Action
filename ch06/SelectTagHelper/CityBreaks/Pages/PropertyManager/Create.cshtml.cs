@@ -36,6 +36,7 @@ namespace CityBreaks.Pages.PropertyManager
         public void OnGet()
         {
             Cities = GetCityOptions();
+            SelectedCity = 3;
         }
 
         public void OnPost()
@@ -58,8 +59,6 @@ namespace CityBreaks.Pages.PropertyManager
                 new SelectListItem { Value = "4", Text = "Rome" },
                 new SelectListItem { Value = "5", Text = "Dublin" }
             };
-
-            //var selected = cities.Where(c => c.Selected).ToList();
 
             return new SelectList(cities, nameof(SelectListItem.Value), nameof(SelectListItem.Text));
         }
