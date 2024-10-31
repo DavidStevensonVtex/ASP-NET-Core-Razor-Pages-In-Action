@@ -2,6 +2,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.ComponentModel.DataAnnotations;
 
 namespace CityBreaks.Pages.PropertyManager
 {
@@ -16,6 +17,7 @@ namespace CityBreaks.Pages.PropertyManager
         [BindProperty]
         public bool SmokingPermitted { get; set; }
         [BindProperty]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}")]
         public DateTime AvailableFrom { get; set; }
 
         public void OnGet()
