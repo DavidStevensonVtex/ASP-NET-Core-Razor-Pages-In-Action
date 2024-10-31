@@ -1,7 +1,8 @@
-// Listing 6.2 The CreateModel for the PropertyManager in the Create.cshtml.cs file in the Pages/PropertyManager folder
+// Listing 6.7 Add properties to represent options and the selected value in the Create.cshtml.cs file in the Pages/PropertyManager folder
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace CityBreaks.Pages.PropertyManager
@@ -24,8 +25,14 @@ namespace CityBreaks.Pages.PropertyManager
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}")]
         public DateTime AvailableFrom { get; set; }
 
+        [Display(Name = "City")]
+        public string SelectedCity { get; set; }
+        public SelectList Cities { get; set; }
+
         public void OnGet()
         {
+            var cities = new[] { "London", "Berlin", "Paris", "Rome", "New York" };
+            Cities = new SelectList(cities);
         }
     }
 }
