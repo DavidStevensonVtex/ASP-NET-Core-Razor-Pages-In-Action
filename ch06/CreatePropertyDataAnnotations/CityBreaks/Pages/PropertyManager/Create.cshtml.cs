@@ -11,12 +11,16 @@ namespace CityBreaks.Pages.PropertyManager
         [BindProperty]
         public string Name { get; set; }
         [BindProperty]
+        [Display(Name="Max Number of Guests")]
         public int MaxNumberOfGuests { get; set; }
         [BindProperty]
+        [Display(Name="Day Rate")]
         public decimal DayRate { get; set; }
         [BindProperty]
+        [Display(Name="Smoking Permitted")]
         public bool SmokingPermitted { get; set; }
         [BindProperty]
+        [Display(Name="Available From")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}")]
         public DateTime AvailableFrom { get; set; }
 
