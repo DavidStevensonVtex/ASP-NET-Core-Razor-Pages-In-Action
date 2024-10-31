@@ -1,4 +1,4 @@
-// Listing 6.10 The amended CreateModel for the property manager in the Create.cshtml.cs file in the Pages/PropertyManager folder
+// Listing 6.11 Constructing a collection of SelectListItems in the Create.cshtml.cs file in the Pages/PropertyManager folder
 
 using CityBreaks.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -50,16 +50,18 @@ namespace CityBreaks.Pages.PropertyManager
 
         private SelectList GetCityOptions()
         {
-            var cities = new List<City>
+            var cities = new List<SelectListItem>
             {
-                new City { Id = 1, Name = "London" },
-                new City { Id = 2, Name = "Paris" },
-                new City { Id = 3, Name = "New York" },
-                new City { Id = 4, Name = "Rome" },
-                new City { Id = 5, Name = "Dublin" }
+                new SelectListItem { Value = "1", Text = "London" },
+                new SelectListItem { Value = "2", Text = "Paris" },
+                new SelectListItem { Value = "3", Text = "New York", Selected = true },
+                new SelectListItem { Value = "4", Text = "Rome" },
+                new SelectListItem { Value = "5", Text = "Dublin" }
             };
 
-            return new SelectList(cities, nameof(City.Id), nameof(City.Name));
+            //var selected = cities.Where(c => c.Selected).ToList();
+
+            return new SelectList(cities, nameof(SelectListItem.Value), nameof(SelectListItem.Text));
         }
     }
 }
